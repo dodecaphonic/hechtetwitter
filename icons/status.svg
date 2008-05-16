@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="status.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="194.68827"
+     inkscape:cy="537.02283"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="937"
+     inkscape:window-height="725"
+     inkscape:window-x="740"
+     inkscape:window-y="262" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:#d0d0d0;fill-opacity:1;stroke:#858585;stroke-width:15.95015717000000066;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2385"
+       sodipodi:sides="5"
+       sodipodi:cx="108.57143"
+       sodipodi:cy="383.79074"
+       sodipodi:r1="133.187"
+       sodipodi:r2="66.593498"
+       sodipodi:arg1="0.9530406"
+       sodipodi:arg2="1.5813591"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 185.71428,492.36217 L 107.86803,450.38052 L 29.152315,490.70838 L 45.023417,403.69914 L -17.655142,341.29804 L 69.999996,329.50503 L 109.97823,250.61117 L 148.28098,330.33192 L 235.66745,343.97394 L 171.68471,405.03709 L 185.71428,492.36217 z"
+       transform="matrix(5.9336172e-2,0,0,6.2176377e-2,110.3985,479.19467)"
+       inkscape:export-filename="/home/dodecaphonic/Projetos/Pessoais/Twitter/images/star_normal.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="fill:#fffe3e;fill-opacity:1;stroke:#a65100;stroke-width:15.95016098;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3157"
+       sodipodi:sides="5"
+       sodipodi:cx="108.57143"
+       sodipodi:cy="383.79074"
+       sodipodi:r1="133.187"
+       sodipodi:r2="66.593498"
+       sodipodi:arg1="0.9530406"
+       sodipodi:arg2="1.5813591"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 185.71428,492.36217 L 107.86803,450.38052 L 29.152315,490.70838 L 45.023417,403.69914 L -17.655142,341.29804 L 69.999996,329.50503 L 109.97823,250.61117 L 148.28098,330.33192 L 235.66745,343.97394 L 171.68471,405.03709 L 185.71428,492.36217 z"
+       transform="matrix(5.9336172e-2,0,0,6.2176343e-2,110.3985,540.81397)"
+       inkscape:export-filename="/home/dodecaphonic/Projetos/Pessoais/Twitter/images/star_clicked.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.30224228px;font-style:normal;font-weight:normal;fill:#d0d0d0;fill-opacity:1;stroke:#858585;stroke-width:0.85852021px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="210.55637"
+       y="556.91925"
+       id="text3159"
+       inkscape:export-filename="/home/dodecaphonic/Projetos/Pessoais/Twitter/images/reply.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3161"
+         x="210.55637"
+         y="556.91925"
+         style="font-size:17.17040443px;font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#d0d0d0;fill-opacity:1;stroke:#858585;stroke-width:0.85852021;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold Oblique">@</tspan></text>
+  </g>
+</svg>
