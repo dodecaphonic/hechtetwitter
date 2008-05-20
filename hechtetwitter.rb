@@ -223,7 +223,7 @@ class HechteTwitter
 
   # Updates character count 
   def on_newTweet_changed(eb)
-    count = CHAR_LIMIT - eb.text.size
+    count = CHAR_LIMIT - eb.text.unpack('U*').size
     if count < 20
       @char_count.markup = "<span foreground='red'>#{count}</span>"
     else

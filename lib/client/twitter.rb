@@ -1,6 +1,5 @@
 begin
   require 'net/http'
-  require 'uri'
   require 'open-uri'
   require 'json'
   require 'htmlentities'
@@ -111,9 +110,9 @@ module Twitter
                          params << opts.join('&')
                          what << params
                        end
-                       Net::HTTP::Get.new what
+                       Net::HTTP::Get.new(what, { 'User-Agent' => 'HechteTwitter' })
                      else
-                       r = Net::HTTP::Post.new what
+                       r = Net::HTTP::Post.new(what, { 'User-Agent' => 'HechteTwitter' })
                        if opts[:fields]
                          fields = {}
                          opts[:fields].each { |o, v| fields[o.to_s] = v }

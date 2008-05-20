@@ -99,7 +99,7 @@ class TwitterWidget < Gtk::DrawingArea
     pl.wrap = Pango::WRAP_WORD
     pl.width = (@width - 100) * Pango::SCALE
     pl.markup = markup
-    cr.show_pango_layout pl    
+    cr.show_pango_layout pl
   end
 
   def place_pixbuf(pixbuf)
@@ -123,6 +123,7 @@ class StatusWidget < TwitterWidget
     super
     @@pixbufs ||= {}
     @links = nil
+    @pango      = nil
     @star_pos   = nil
     @reply_pos  = nil
   end
@@ -206,7 +207,7 @@ class StatusWidget < TwitterWidget
     url    = /(http:\/\/\S+)/
     @links  ||= @message.text.scan(url).flatten 
     markup  = @message.text.gsub url, '<span foreground="#ccffff" font_desc="Sans Bold 8">\1</span>'
-    draw_markup "<span font_desc='Sans Bold 9'>#{@message.user.name}</span>\n<span font_desc='Sans 8'>#{markup}</span>"
+    @pango = draw_markup "<span font_desc='Sans Bold 9'>#{@message.user.name}</span>\n<span font_desc='Sans 8'>#{markup}</span>"
   end
 
   def draw_star(pos)

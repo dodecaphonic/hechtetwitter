@@ -11,7 +11,7 @@ class DesktopNotifier
 
   def notify(message)
     if @enabled
-      @notifier.Notify 'HechteTwitter', message.id, nil, message.user.screen_name, message.text, [], {}, -1
+      @notifier.Notify 'HechteTwitter', message.id, nil, message.user.screen_name, message.text, [], {}, 8000
     end
   end
 
