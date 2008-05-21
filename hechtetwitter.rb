@@ -53,7 +53,7 @@ class HechteTwitter
       menu = Gtk::Menu.new
       dnot = Gtk::CheckMenuItem.new 'Disable notifications'
       dnot.active = !@notifier.enabled?
-      qopt = Gtk::MenuItem.new 'Quit HechteTwitter'
+      qopt = Gtk::ImageMenuItem.new Gtk::Stock::QUIT
       qopt.signal_connect('activate') { quit }
       dnot.signal_connect('activate') do
         @notifier.enabled? ? @notifier.disable! : @notifier.enable

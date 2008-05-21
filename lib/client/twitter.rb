@@ -101,41 +101,43 @@ module Twitter
 
     private
     def fetch(what, method=:get, opts={})
-      auth = opts[:auth] || true
-      data = Net::HTTP.start(BASEURL) do |http|
-               req = if method == :get
-                       if opts[:fields]
-                         params = '?'
-                         opts[:fields].map { |f, v| "#{f}=#{URI.encode v.to_s}" }
-                         params << opts.join('&')
-                         what << params
-                       end
-                       Net::HTTP::Get.new(what, { 'User-Agent' => 'HechteTwitter' })
-                     else
-                       r = Net::HTTP::Post.new(what, { 'User-Agent' => 'HechteTwitter' })
-                       if opts[:fields]
-                         fields = {}
-                         opts[:fields].each { |o, v| fields[o.to_s] = v }
-                         r.set_form_data fields if opts
-                       end
-                       r
-                     end
-               req.basic_auth @user, @password if auth
-               http.request(req).body
-             end
-      check_data data
-    end
-
-    def check_data(data)
       begin
-        data = JSON.parse data
-        raise ExcessRequestsException, data['error'] if data.is_a?(Hash) && data['error']
-        data
+        auth = opts[:auth] || true
+        data = Net::HTTP.start(BASEURL) do |http|
+                 req = if method == :get
+                         if opts[:fields]
+                           params = '?'
+                           opts[:fields].map { |f, v| "#{f}=#{URI.encode v.to_s}" }
+                           params << opts.join('&')
+                           what << params
+                         end
+                         Net::HTTP::Get.new(what, { 'User-Agent' => 'HechteTwitter' })
+                       else
+                         r = Net::HTTP::Post.new(what, { 'User-Agent' => 'HechteTwitter' })
+                         if opts[:fields]
+                           fields = {}
+                           opts[:fields].each { |o, v| fields[o.to_s] = v }
+                           r.set_form_data fields if opts
+                         end
+                         r
+                       end
+                 req.basic_auth @user, @password if auth
+                 http.request(req).body
+               end
+        check_data data
       rescue JSON::ParserError => jse
         raise MalformedDataException, "Malformed output from Twitter's servers."
       rescue ExcessRequestsException => ere
         raise ere
+      rescue
+        raise StandardError, "Problem retrieving information from Twitter's servers. Please contact Twitter for more information."
       end
+    end
+
+    def check_data(data)
+      data = JSON.parse data
+      raise ExcessRequestsException, data['error'] if data.is_a?(Hash) && data['error']
+      data
     end
     
     def build_message_list(input)

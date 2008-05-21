@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.4.5 on Fri May 16 16:49:13 2008 -->
+<!--Generated with glade3 3.4.5 on Tue May 20 10:45:40 2008 -->
 <glade-interface>
   <widget class="GtkWindow" id="twitter">
     <property name="width_request">400</property>
@@ -176,13 +176,42 @@
             <property name="n_rows">3</property>
             <property name="n_columns">2</property>
             <child>
-              <widget class="GtkLabel" id="label5">
+              <widget class="GtkImage" id="image1">
                 <property name="visible">True</property>
-                <property name="label" translatable="yes">Password</property>
+                <property name="pixbuf">ht128x128.png</property>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkLabel" id="label6">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Using HechteTwitter is like Twitter itself: simple and fun. Just put your username and password below and start tweeting away!</property>
+                <property name="wrap">True</property>
               </widget>
               <packing>
-                <property name="top_attach">2</property>
-                <property name="bottom_attach">3</property>
+                <property name="left_attach">1</property>
+                <property name="right_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkEntry" id="username">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+              </widget>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">2</property>
+                <property name="top_attach">1</property>
+                <property name="bottom_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLabel" id="label4">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Screen name</property>
+              </widget>
+              <packing>
+                <property name="top_attach">1</property>
+                <property name="bottom_attach">2</property>
               </packing>
             </child>
             <child>
@@ -200,43 +229,14 @@
               </packing>
             </child>
             <child>
-              <widget class="GtkLabel" id="label4">
+              <widget class="GtkLabel" id="label5">
                 <property name="visible">True</property>
-                <property name="label" translatable="yes">Screen name</property>
+                <property name="label" translatable="yes">Password</property>
               </widget>
               <packing>
-                <property name="top_attach">1</property>
-                <property name="bottom_attach">2</property>
+                <property name="top_attach">2</property>
+                <property name="bottom_attach">3</property>
               </packing>
-            </child>
-            <child>
-              <widget class="GtkEntry" id="username">
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-              </widget>
-              <packing>
-                <property name="left_attach">1</property>
-                <property name="right_attach">2</property>
-                <property name="top_attach">1</property>
-                <property name="bottom_attach">2</property>
-              </packing>
-            </child>
-            <child>
-              <widget class="GtkLabel" id="label6">
-                <property name="visible">True</property>
-                <property name="label" translatable="yes">Using HechteTwitter is like Twitter itself: simple and fun. Just put your username and password below and start tweeting away!</property>
-                <property name="wrap">True</property>
-              </widget>
-              <packing>
-                <property name="left_attach">1</property>
-                <property name="right_attach">2</property>
-              </packing>
-            </child>
-            <child>
-              <widget class="GtkImage" id="image1">
-                <property name="visible">True</property>
-                <property name="pixbuf">ht128x128.png</property>
-              </widget>
             </child>
           </widget>
           <packing>
@@ -280,6 +280,11 @@
           </packing>
         </child>
       </widget>
+    </child>
+  </widget>
+  <widget class="GtkWindow" id="preferences">
+    <child>
+      <placeholder/>
     </child>
   </widget>
 </glade-interface>
