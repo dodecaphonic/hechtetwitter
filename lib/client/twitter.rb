@@ -52,7 +52,7 @@ module Twitter
     def post(text)
       text = text[0...160]
       request = "/statuses/update#{FORMAT}"
-      output = fetch request, :post, :fields => { :status => text }
+      output = fetch request, :post, :fields => { :status => text, :source => "hechtetwitter" }
       make_message output
     end
 
