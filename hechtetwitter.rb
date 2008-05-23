@@ -11,6 +11,7 @@ require 'twitter_credentials'
 require 'notification'
 require 'poller'
 require 'credentials'
+require 'sexy'
 
 Thread.abort_on_exception = true
 
@@ -31,6 +32,7 @@ class HechteTwitter
     @tweets    = []
     @twitter   = Twitter::Client.new credentials.username, credentials.password
     @tips      = Gtk::Tooltips.new
+    @new_tweet = add_icon_entry
     @xml['twitter'].title = "HechteTwitter - #{credentials.username}"
     @xml['twitter'].show_all
     @poller    = TimelinePoller.new(@twitter, :friends, 180) { |e| show_error e }
@@ -41,6 +43,17 @@ class HechteTwitter
   end
 
   private
+  def add_icon_entry
+    ientry = Sexy::IconEntry.new
+    ientry.add_clear_button
+    @xml['postBox'].remove @xml['newTweet']
+    @xml['postBox'].pack_start ientry, true, true
+    @xml['postBox'].reorder_child ientry, 0
+    ientry.signal_connect('activate') { on_newTweet_activate ientry }
+    ientry.signal_connect('changed')  { on_newTweet_changed  ientry }
+    ientry
+  end
+  
   # Defines a tray icon for the application.
   def define_tray_icon
     tray = Gtk::StatusIcon.new
