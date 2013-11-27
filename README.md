@@ -1,6 +1,6 @@
 # HechteTwitter - A Strong Twitter client that succumbed to time
 
-Like in 2007/2008 who could set down two lines of code, I wrote a Twitter client. Since my main platform was Linux, I chose Ruby and GTK+. To my surprise, it generated some buzz and got packaged by other people, but my interest waned, Twitter wasn't as friendly to developers and eventually it died.
+Like everyone in 2007/2008 who could set down two lines of code, I wrote a Twitter client. Since my main platform was Linux, I chose Ruby and GTK+. To my surprise, it generated some buzz and got packaged by other people, but my interest waned, Twitter wasn't as friendly to developers and eventually it died.
 
 It's not good code, the thing itself wasn't very fast, and almost everything about my approach has changed, but it existed. This is here for posterity.
 
